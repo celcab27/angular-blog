@@ -1,0 +1,8 @@
+<div class="container">
+    <br/><h2>Lista de Usuarios:</h2> <br/>
+    <ul>
+        <li *ngFor="let usuario of usuarios" (click)="verDetalle(usuario.id)">
+            {{usuario.name}}
+        </li>
+    </ul>
+</div>

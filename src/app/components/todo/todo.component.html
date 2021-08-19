@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4 grid">
+        <div class="card" *ngFor="let tarea of tareas">
+            <div class="card-body">
+              <h5 class="card-title">{{tarea.title}}</h5>
+              <p class="card-text">Estado: {{tarea.completada}}</p>
+              <p class="card-text"><small class="text-muted">Usuario: {{tarea.userId}}</small></p>
+              <div>
+                  <button type="button" class="btn" >
+                      Ver usuario
+                  </button>
+                  <button type="button" class="btn" (click)="cambiarEstado(tarea.id)">
+                    {{tarea.buttonMessage}}
+                </button>
+              </div>
+            </div>
+          </div>
+          
+      </div>    
+</div>

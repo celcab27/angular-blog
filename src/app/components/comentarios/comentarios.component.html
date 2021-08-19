@@ -1,0 +1,20 @@
+<div class="container">
+  <table class="table table-striped ">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Comentario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let comentario of comentarios">
+        <th scope="row">{{comentario.id}}</th>
+        <td>{{comentario.name}}</td>
+        <td>{{comentario.email}}</td>
+        <td>{{comentario.body}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

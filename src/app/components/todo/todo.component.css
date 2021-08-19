@@ -1,0 +1,15 @@
+.btn{
+    background-color: #ffbfaf;
+    margin-left: 1rem;
+    width: 8.6rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+
+}
+
+.card{
+    width: 100%;
+}

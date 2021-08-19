@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleFormControlInput1"name="filterPost" placeholder="Buscar por título..." [(ngModel)]="filterPost"><br/>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 grid">
+    <div class="card" *ngFor="let post of posts | filter:filterPost">
+        <div class="card-body">
+          <h5 class="card-title">{{post.title}}</h5>
+          <p class="card-text">{{post.body}}</p>
+          <p class="card-text"><small class="text-muted">Usuario: {{post.userId}}</small></p>
+          <div>
+              <button type="button" class="btn" (click)="verComentarios(post.id)">
+                  Ver comentarios
+              </button>
+              <button type="button" class="btn" (click)="verUsuario(post.userId)">
+                  Ver usuario
+              </button>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+  
+</div>

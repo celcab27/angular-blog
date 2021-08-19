@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Información del usuario</h2><br/>
+    <ul>
+        <li>Nombre: {{usuario.name}}</li>
+        <li>Nombre de Usuario: {{usuario.username}}</li>
+        <li>Correo: {{usuario.email}}</li>
+        <li>Dirección: {{usuario.address.street}}, {{usuario.address.suite}}, {{usuario.address.city}}, {{usuario.address.zipcode}}</li>
+        <li>Teléfono: {{usuario.phone}}</li>
+        <li>Sitio web: {{usuario.website}}</li><br/><br/>
+    
+        <div>
+            <button type="button" class="btn" (click)="verPosts(usuario.id)">Posteos</button>
+            <button type="button" class="btn" (click)="verAlbums(usuario.id)">Albumes</button>
+            <button type="button" class="btn" (click)="verTareas(usuario.id)">Tareas</button>    
+        </div>
+    
+    </ul>
+</div>

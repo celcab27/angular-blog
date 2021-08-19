@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4 grid">
+    <div class="card" *ngFor="let album of albums">
+        <div class="card-body">
+          <h5 class="card-title">{{album.title}}</h5>
+          <p class="card-text"><small class="text-muted">Usuario: {{album.userId}}</small></p>
+          <div>
+             <button  type="button" class="btn" (click)="verUsuario(album.userId)">Ver usuario</button>
+             <button  type="button" class="btn" (click)="verFotos(album.id)">Ver fotos</button>
+          </div>
+        </div>
+      </div>
+</div>
+
+</div>
